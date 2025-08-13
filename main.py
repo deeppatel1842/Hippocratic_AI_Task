@@ -2,6 +2,12 @@ from story_teller import StoryTeller
 from story_judge import StoryJudge
 from config_loader import config
 
+"""
+Before submitting the assignment, describe here in a few sentences what you would have built next if you spent 2 more hours on this project:
+
+I would add text-to-audio functionality so children could listen to their bedtime stories with different character voices, making it perfect for winding down at night. Additionally, I would implement a character memory system where favorite characters could appear in multiple stories, creating a personalized story universe that grows with each child's preferences.
+"""
+
 def print_evaluation(evaluation: dict, category: str):
     """Display story evaluation results"""
     display_settings = config.get_display_settings()
