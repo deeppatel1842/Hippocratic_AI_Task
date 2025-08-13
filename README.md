@@ -6,6 +6,11 @@ Welcome to the Bedtime Story Generator! This is an intelligent system that creat
 
 I built this system to solve a real problem: how do you create consistently good bedtime stories that are always age-appropriate, safe, and engaging? The answer was automation through intelligent configuration.
 
+what you would have built next if you spent 2 more hours on this project:
+
+I would add text-to-audio functionality so children could listen to their bedtime stories with different character voices, making it perfect for winding down at night. Additionally, I would implement a character memory system where favorite characters could appear in multiple stories, creating a personalized story universe that grows with each child's preferences.
+
+
 ###  Key Features
 
 - **Fully Automated Quality Control**: Every story is automatically evaluated for safety, reading level, and appropriateness
