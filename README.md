@@ -64,7 +64,7 @@ Every story is automatically checked for:
 - **Age Appropriateness**: Validates content for 5-10 year olds
 - **Bedtime Suitability**: Ensures calming, sleep-friendly themes
 
-## 📁 System Architecture
+## System Architecture
 
 ### Comprehensive Block Diagram
 
@@ -181,7 +181,7 @@ hippocriptic.ai/
 └── README.md            # This file
 ```
 
-## 🎭 Real Examples
+##  Real Examples
 
 Here's what the system actually produces:
 
