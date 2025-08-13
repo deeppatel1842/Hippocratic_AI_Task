@@ -1,0 +1,94 @@
+{
+  "story_settings": {
+    "min_word_count": 250,
+    "max_word_count": 500,
+    "min_grade_level": 3,
+    "max_grade_level": 6.5,
+    "target_grade_level": 5.0
+  },
+  "story_evaluation": {
+    "default_llm_scores": {
+      "age_appropriateness": 80,
+      "bedtime_suitability": 85,
+      "story_structure": 75,
+      "engagement": 75,
+      "originality": 70,
+      "educational_value": 80
+    },
+    "composite_score_weights": {
+      "predictability": 0.25,
+      "vocabulary": 0.25,
+      "age_level": 0.25,
+      "safety": 0.25
+    },
+    "quality_thresholds": {
+      "min_word_count": 250,
+      "max_word_count": 500,
+      "min_reading_level": 3.0,
+      "max_reading_level": 6.5,
+      "target_reading_level": 5.0,
+      "min_overall_score": 75,
+      "min_safety_score": 80,
+      "min_composite_score": 70
+    },
+    "vocabulary_settings": {
+      "richness_multiplier": 1.5,
+      "max_vocabulary_score": 100
+    },
+    "age_level_scoring": {
+      "target_grade": 5.0,
+      "penalty_per_grade_diff": 10,
+      "min_age_score": 0,
+      "max_age_score": 100
+    }
+  },
+  "story_categories": {
+    "animals": {
+      "keywords": ["lion", "tiger", "elephant", "bear", "rabbit", "fox", "deer", "bird", "cat", "dog", "horse", "sheep", "cow", "pig", "chicken", "duck", "fish", "whale", "dolphin", "turtle"],
+      "prompt_strategy": "gentle animal friends and nature lessons"
+    },
+    "magic": {
+      "keywords": ["magic", "wizard", "fairy", "unicorn", "dragon", "castle", "wand", "spell", "enchanted", "mystical"],
+      "prompt_strategy": "soft magic and wonder without fear"
+    },
+    "adventure": {
+      "keywords": ["adventure", "journey", "quest", "explore", "treasure", "map", "forest", "mountain", "island", "cave"],
+      "prompt_strategy": "safe exploration and discovery"
+    },
+    "friendship": {
+      "keywords": ["friend", "friends", "friendship", "together", "help", "kind", "share", "care", "play", "team"],
+      "prompt_strategy": "kindness and cooperation themes"
+    },
+    "learning": {
+      "keywords": ["learn", "school", "teacher", "book", "read", "discover", "science", "math", "art", "music"],
+      "prompt_strategy": "educational but fun content"
+    },
+    "family": {
+      "keywords": ["mom", "dad", "mother", "father", "family", "sister", "brother", "grandma", "grandpa", "home"],
+      "prompt_strategy": "family bonds, love, and security"
+    }
+  },
+  "safety_filters": {
+    "calming_words": ["sleep", "dream", "night", "gentle", "soft", "peaceful", "quiet", "calm", "cozy", "warm", "safe", "love"],
+    "unsafe_words": ["scary", "frightening", "monster", "violent", "hurt", "death", "blood", "fight", "angry", "mean"],
+    "safety_penalty_per_word": 20
+  },
+  "openai_settings": {
+    "model": "gpt-3.5-turbo",
+    "max_tokens": 3000,
+    "temperature": 0.7,
+    "judge_max_tokens": 100,
+    "judge_temperature": 0.1
+  },
+  "story_generation": {
+    "base_prompt_template": "Create a bedtime story for children ages 5-10. The story should be {word_count} words, have a reading level between {min_reading_level}-{max_reading_level}, and focus on {category_strategy}. Make it calming and appropriate for bedtime.",
+    "improvement_prompt_template": "Improve this story based on the following feedback: {feedback}. Maintain the same general plot but address the specific issues mentioned.",
+    "modification_prompt_template": "Modify this story based on user feedback: {user_feedback}. Keep the core story elements but make the requested changes."
+  },
+  "display_settings": {
+    "show_detailed_metrics": true,
+    "show_component_breakdown": true,
+    "show_improvement_suggestions": true,
+    "max_story_display_length": 2000
+  }
+}
